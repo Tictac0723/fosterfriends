@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Foster Finder Contact</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600|Raleway:600,300|Josefin+Slab:400,700,600italic,600,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/slick-team-slider.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  <body>
+      <!--HEADER START-->
+      <div class="main-navigation navbar-fixed-top">
+          <nav class="navbar navbar-default">
+              <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Foster Finder</a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="active"><a href="./index.html">Home</a></li>
+                  <li><a href="">Service</a></li>
+                  <li><a href="./dogs.html">Dogs</a></li>
+                  <li><a href="./fosters.html">Fosters</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+      </div>
+    <!-- Page Content -->
+    <br>
+    <br>
+        <div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-7 col-lg-6">
+
+      <form action="/api/foster" method="POST" id="form" class="form-vertical" role="form">
+        <fieldset>
+          <legend>Foster Questionaire</legend>
+
+          <div class="form-group">
+            <label for="input-first" class="control-label">First Name</label>
+            <input  class="form-control" id="first-name" name="input-first" placeholder="ex. Tina">
+          </div>
+          <div class="form-group">
+            <label for="input-last" class="control-label">Last Name:</label>
+            <input type="text" class="form-control mask-date" id="last-name" name="input-last" placeholder="ex. Belcher">
+          </div>
+          <div class="form-group">Link to your image(Required):</label>
+            <input type="text" class="form-control mask-date" id="image-link" name="input-last" placeholder="Link to Facebook/Linkedin/etc. Photo">
+          </div>
+          <div class="form-group">
+            <label for="input-email" class="control-label">Email:</label>
+            <input type="text" class="form-control mask-money" id="email" name="input-email" placeholder="ex johndoe@gmail.com">
+          </div>
+          <div class="form-group">
+            <label for="input-phone" class="control-label">Phone Number:</label>
+            <input type="text" class="form-control" id="phone" name="input-phone" placeholder="214-555-5555">
+          </div>
+
+          <div class="form-group">
+            <label for="input-home" class="control-label">Type of Home:</label>
+            <select class="form-control" id="home-type" name="input-home">
+              <option value="">Select</option>
+              <option value="apartment">Apartment</option>
+              <option value="townhouse">Townhouse</option>
+              <option value="duplex">Duplex</option>
+              <option value="single family">Single Family</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="input-yard" class="control-label">Fenced Yard?</label>
+            <select class="form-control" id="yard" name="input-yard">
+              <option value="">Select</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="input-kids" class="control-label">Anyone under 18 yrs of age living in the home?</label>
+            <select class="form-control" id="kids" name="input-kids">
+              <option value="">Select</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="input-pets" class="control-label">Do you currently have pets?</label>
+            <select class="form-control" id="pets" name="input-pets">
+              <option value="">Select</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="input-pet-type" class="control-label">Pet type?</label>
+            <select class="form-control" id="pet-type" name="input-pet-type">
+              <option value="">Select</option>
+              <option value="yes">Dog</option>
+              <option value="no">Cat</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="input-text" class="control-label">Breed and Temperment:</label>
+            <textarea type="text" class="form-control" id="textbox" placeholder="..."></textarea>
+          </div> 
+
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary" style ="background-color:#16a085;" id="profile">Submit</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="footer-bottom">
+    <div class="container">
+        <div style="visibility: visible; animation-name: zoomIn;" class="col-md-12 text-center wow zoomIn">
+            <div class="footer_copyright">
+                <p> © Copyright, All Rights Reserved.</p>					
+                <div class="credits">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+
+  $("#profile").on("click", function(event) {
+    event.preventDefault();
+
+
+    var foster = {
+      firstname: $("#first-name").val(),
+      lastname: $("#last-name").val(),
+      imageLink:$("#image-link").val(),
+      email: $("#email").val(),
+      phone: $("#phone").val(),
+      hometype: $("#home-type").val(),
+      yardtype: $("#yard").val(),
+      kids: $("#kids").val(),
+      pets: $("#pets").val(),
+      pettype: $("#pet-type").val(),
+      text: $("#textbox").val()
+    }
+    
+    $.post('/api/foster', foster);
+  });
+
+</script>
+
+</body>
+
+</html>

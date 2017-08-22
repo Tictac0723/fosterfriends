@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Foster Finder Contact</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600|Raleway:600,300|Josefin+Slab:400,700,600italic,600,400italic'
+        rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/slick-team-slider.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <body>
+        <!--HEADER START-->
+        <div class="main-navigation navbar-fixed-top">
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                        <a class="navbar-brand" href="index.html">Foster Finder</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="./index.html">Home</a></li>
+                            <li><a href="">Service</a></li>
+                            <li><a href="./dogs.html">Dogs</a></li>
+                            <li><a href="./fosters.html">Fosters</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Page Content -->
+        <br>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-10 col-md-7 col-lg-6">
+                    <form action="/api/dogs" method="POST" class="form-vertical" id="form" role="form">
+                        <fieldset>
+                            <legend>Dog Profile</legend><br><br>
+
+                            <div class="form-group">
+                                <label for="input-name" class="control-label">Name:</label>
+                                <input type="text" class="form-control" id="input-name" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="input-name" class="control-label">Link to photo image (Required):</label>
+                                <input type="text" class="form-control" id="photo-link" placeholder="Photo Image Link">
+                            </div>
+                            <div class="form-group">
+                                <label for="input-breed" class="control-label">Breed:</label>
+                                <input type="text" class="form-control mask-date" id="breed" placeholder="Breed">
+                            </div>
+                            <div class="form-group">
+                                <label for="input-age" class="control-label">Age:</label>
+                                <input type="text" class="form-control mask-money" id="age" placeholder="Age">
+                            </div>
+                            <div class="form-group">
+                                <label for="input-gender" class="control-label">Gender:</label>
+                                <input type="text" class="form-control" id="gender" placeholder="Gender">
+                            </div>
+                            <div class="form-group">
+                                <label for="input-discription" class="control-label">Description:</label>
+                                <textarea type="text" class="form-control" id="description" placeholder="Description"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="input-location" class="control-label">location:</label>
+                                <textarea type="text" class="form-control" id="location" placeholder="Location"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" style="background-color:#16a085;" class="btn btn-primary" id="submit">Submit</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div style="visibility: visible; animation-name: zoomIn;" class="col-md-12 text-center wow zoomIn">
+                    <div class="footer_copyright">
+                        <p> © Copyright, All Rights Reserved.</p>
+                        <div class="credits">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script>
+            $("#submit").on("click", function (event) {
+                event.preventDefault();
+
+                var dog = {
+                    name: $("#input-name").val(),
+                    photo: $("#photo-link").val(),
+                    breed: $("#breed").val(),
+                    age: $("#age").val(),
+                    gender: $("#gender").val(),
+                    description: $("#description").val(),
+                    location: $("#location").val()
+                }
+
+                $.post('http://localhost:8080/api/dogs', dog);
+            });
+        </script>
+    </body>
+
+</html>
