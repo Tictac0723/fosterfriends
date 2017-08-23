@@ -121,8 +121,10 @@
           </div> 
 
           <div class="form-group">
-            <button type="submit" class="btn btn-primary" style ="background-color:#16a085;" id="profile">Submit</button>
+            <button type="submit" onclick="ShowSnackBar()" class="btn btn-primary" style ="background-color:#16a085;" id="profile">Submit</button>
+            <div id="snackbar">Your application has been submitted!</div>
           </div>
+          <div id="snackbar"></div>
         </fieldset>
       </form>
     </div>
@@ -143,6 +145,8 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="toast.js"></script>
+    
 <script>
 
   $("#profile").on("click", function(event) {
@@ -164,8 +168,19 @@
     }
     
     $.post('/api/foster', foster);
-    window.alert('Form Submitted!');
-    window.location.href='./index.html';
+
+    function ShowSnackBar() {
+      // Get the snackbar DIV
+      var x = document.getElementById("snackbar")
+  
+      // Add the "show" class to DIV
+      x.className = "show";
+  
+      // After 3 seconds, remove the show class from DIV
+      setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+  }
+    ShowSnackBar();
+    
   });
 
 </script>
