@@ -15,43 +15,6 @@ h1.cta-title {
 h1 {
     font-size: 36px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /**************************************
 Header
 **************************************/
@@ -233,7 +196,7 @@ p.cta-sub-title {
 .pg-titl-bdr-btm {
     width: 100px;
     height: 3px;
-    background-color: #16a085c;
+    background-color: #C9CCCC;
 }
 
 .service-box {
@@ -249,7 +212,7 @@ p.cta-sub-title {
     border: 1px solid #e9e9e9;
     line-height: 75px;
     text-align: center;
-    color: ##16a085;
+    color: #16a085;
     font-size: 30px;
     margin-right: 23px;
     float: left;
@@ -681,6 +644,11 @@ img {
     width: 300px;
     display: inline;
 }
+#foster_name {
+    color: #16a085;
+    font-family: 'Josefin Slab', serif;
+    font-weight: bolder;
+}
 
 #foster_photo {
     width: 300px;
@@ -691,13 +659,7 @@ img {
     margin: 5%;
 }
 
-#dog_name {
-    color: #16a085;
-    font-family: 'Josefin Slab', serif;
-    font-weight: bolder;
-}
-
-#foster_name {
+#dog_name{
     color: #16a085;
     font-family: 'Josefin Slab', serif;
     font-weight: bolder;
@@ -723,41 +685,6 @@ img {
     font-size: 50px;
     font-weight: bolder;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /**************************************
@@ -893,41 +820,6 @@ cta
         border: 0px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /**************************************
