@@ -2,7 +2,7 @@
     "development":
     {
         "username": "root",
-        "password": "password",
+        "password": "Froggy34",
         "database": "fosterfinder",
         "host": "127.0.0.1",
         "dialect": "mysql"
