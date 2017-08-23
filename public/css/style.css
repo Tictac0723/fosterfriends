@@ -1,9 +1,3 @@
-/*
-    Theme Name: Tempo
-    Theme URL: https://bootstrapmade.com/tempo-free-onepage-bootstrap-theme/
-    Author: BootstrapMade.com
-    Author URL: https://bootstrapmade.com
-*/
 
 /**************************************
 link & button
@@ -441,11 +435,11 @@ margin-top: 5px;
 }
 .footer-bottom {
     background: #09121B;
-    padding: 20px 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    margin-top: 50px;
+        position: relative;
+        width: 100%;
+        margin-top: -50px; /* negative value of footer height */
+        height: 50px;
+        clear: both; 
 }
 .footer-main {
     background: #09121B;
