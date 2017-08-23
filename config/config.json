@@ -17,10 +17,10 @@
     },
     "production":
     {
-        "username": "av2ztt0d5r1ut7g9",
-        "password": "xtd4zpikl3fa7k21",
-        "database": "fosterfinder",
-        "host": "uc13jynhmkss3nve.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+        "username": "smufosterfinder@fosterfinder",
+        "password": "SMUcode1234",
+        "database": "fosterFinder",
+        "host": "fosterfinder.mysql.database.azure.com",
         "dialect": "mysql",
         "port": 3306
     }
