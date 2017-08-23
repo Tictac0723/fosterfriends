@@ -17,8 +17,8 @@
     },
     "production":
     {
-        "username": "x4xws2cn2j24waxg",
-        "password": "s1pcl7n4l1kc564p",
+        "username": "av2ztt0d5r1ut7g9",
+        "password": "xtd4zpikl3fa7k21",
         "database": "fosterfinder",
         "host": "uc13jynhmkss3nve.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
         "dialect": "mysql",
