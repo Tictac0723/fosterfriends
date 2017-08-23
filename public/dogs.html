@@ -7,105 +7,105 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Foster Finder Shop</title>
-    
-    <!-- Bootstrap core CSS -->
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600|Raleway:600,300|Josefin+Slab:400,700,600italic,600,400italic' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600|Raleway:600,300|Josefin+Slab:400,700,600italic,600,400italic'
+        rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/slick-team-slider.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-team-slider.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
     <!-- Navigation -->
     <!--HEADER START-->
-	<div class="main-navigation navbar-fixed-top">
-		<nav class="navbar navbar-default">
-			<div class="container">
-			<div class="navbar-header">
-			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+    <div class="main-navigation navbar-fixed-top">
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 			    <span class="icon-bar"></span>
 			    <span class="icon-bar"></span>
 			    <span class="icon-bar"></span>
 			  </button>
-			  <a class="navbar-brand" href="index.html">Foster Finder</a>
-			</div>
-			<div class="collapse navbar-collapse" id="myNavbar">
-			  <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="./index.html">Home</a></li>
-			    <li><a href="./dogs.html">Dogs</a></li>
-			    <li><a href="./fosters.html">Fosters</a></li>
-			  </ul>
-			</div>
-		  </div>
-		</nav>
-	</div>
-	<!--HEADER END-->
+                    <a class="navbar-brand" href="index.html">Foster Finder</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="./index.html">Home</a></li>
+                        <li><a href="./dogs.html">Dogs</a></li>
+                        <li><a href="./fosters.html">Fosters</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--HEADER END-->
     <!-- Page Content -->
     <!--SERVICE START-->
-	<div id="availableDogs" class="section-padding">
-		<div class="container">
-			<div class="row">
-				<div class="page-title text-center">
-					<h1 style="font-family: Encode Sans Condensed, sans-serif;">Foster One of Our Fur-Babies!</h1>
-					<hr class="pg-titl-bdr-btm"></hr>
-				</div>
+    <div id="availableDogs" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="page-title text-center">
+                    <h1 style="font-family: Encode Sans Condensed, sans-serif;">Foster One of Our Fur-Babies!</h1>
+                    <hr class="pg-titl-bdr-btm"></hr>
+                </div>
                 <main>
-        
+
                     <div class="gallery" id="gallery">
                         <div id="galleryItems" class="gallery__wrapper">
-        
+
                         </div>
                     </div>
                 </main>
-			</div>
-		</div>
-	</div>
-	<!--SERVICE END-->
+            </div>
+        </div>
+    </div>
+    <!--SERVICE END-->
 
 
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h2 class="modal-title" id="dogName"><strong></strong></h2>
-                    </div>
-                    <div class="modal-body">
-                        <img id="dogImg" src="" alt="">
-                        <p id="dogDescription"></p>
-                        <p id="dogLocation"></p>
-                        <p id="dogBreed"></p>
-                        <p id="dogAge"></p>
-                    </div>
-                    <button type="button" class="btn btn-default" id="fosterButton" onclick="window.open('email.html')">
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="dogName"><strong></strong></h2>
+                </div>
+                <div class="modal-body">
+                    <img id="dogImg" src="" alt="">
+                    <p id="dogDescription"></p>
+                    <p id="dogLocation"></p>
+                    <p id="dogBreed"></p>
+                    <p id="dogAge"></p>
+                </div>
+                <button type="button" class="btn btn-default" id="fosterButton" onclick="window.open('email.html')">
                                 <span class="fa fa-heart"></span> I Want To Foster!
                               </button>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
+    </div>
     <!-- /.container -->
 
-        <div class="footer-main">
-            <div class="container">
-                <div style="visibility: visible; animation-name: zoomIn;" class="col-md-12 text-center wow zoomIn">
-                    <div class="footer_copyright">
-                        <p> © Copyright, All Rights Reserved.</p>					
-                        <div class="credits">
-                        </div>
+    <div class="footer-main">
+        <div class="container">
+            <div style="visibility: visible; animation-name: zoomIn;" class="col-md-12 text-center wow zoomIn">
+                <div class="footer_copyright">
+                    <p> © Copyright, All Rights Reserved.</p>
+                    <div class="credits">
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     <!-- /.container -->
-    <!-- Bootstrap core JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="crossorigin="anonymous"></script>
-<!-- Latest compiled JavaScript -->
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             $.get("/api/dogs", function (data) {
