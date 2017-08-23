@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Foster Finder Contact</title>
-    <!-- Bootstrap core CSS -->
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600|Raleway:600,300|Josefin+Slab:400,700,600italic,600,400italic'
@@ -97,9 +97,9 @@
             </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-        <!-- Latest compiled JavaScript -->
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+            <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script>
             $("#submit").on("click", function (event) {
                 event.preventDefault();
@@ -114,21 +114,20 @@
                     location: $("#location").val()
                 }
 
-                $.post('http://localhost:8080/api/dogs', dog);
-               
-                function ShowSnackBar() {
-      // Get the snackbar DIV
-      var x = document.getElementById("snackbar")
-  
-      // Add the "show" class to DIV
-      x.className = "show";
-  
-      // After 3 seconds, remove the show class from DIV
-      setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-  }
-    ShowSnackBar();
-            });
+                $.post('/api/dogs', dog);
 
+                function ShowSnackBar() {
+                    // Get the snackbar DIV
+                    var x = document.getElementById("snackbar")
+
+                    // Add the "show" class to DIV
+                    x.className = "show";
+
+                    // After 3 seconds, remove the show class from DIV
+                    setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+                }
+                ShowSnackBar();
+            });
         </script>
     </body>
 
